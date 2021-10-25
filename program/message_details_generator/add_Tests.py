@@ -4,10 +4,10 @@ from pandas.io import excel
 import xlsxwriter
 import openpyxl
 from openpyxl.worksheet.dimensions import ColumnDimension
-import tree_to_excel as generator
+
 import sys
 sys.path[0] += '\\..'
-import paths
+
 baseType_tests ={"string":["correct value","Invalid value","empty value","missing element"]
             ,"dateTime":["correct value","wrongDate","wrongOrderOfDate","empty"]
             ,"decimal":["correct value","negative","0","fractionalNumber","bigNumber","empty","1decimal","2decimal","3decimal","12decimal"]
@@ -37,6 +37,6 @@ def add_Tests(message_details_folder_path):
         df.to_excel(writer, sheet_name='Sheet1',index=False)
         writer.save()
 
-generator.make_excels_from_xsd(folder_Of_xsd=paths.xsd_folder_path)
-add_Tests(message_details_folder_path=paths.message_details_folder_path)
+
+
 

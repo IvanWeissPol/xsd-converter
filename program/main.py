@@ -1,0 +1,8 @@
+import message_details_generator.tree_to_excel as message_details_generator
+import test_cases_generator.test_cases as test_cases_generator
+import message_details_generator.add_Tests as add_Tests
+import paths as paths
+#message_details_folder_path=paths.message_details_folder_path
+#message_details_generator.make_excels_from_xsd(folder_Of_xsd=paths.xsd_folder_path)
+#add_Tests.add_Tests(message_details_folder_path=message_details_folder_path)
+test_cases_generator.make_test_cases(message_details_folder_path=paths.message_details_folder_path)

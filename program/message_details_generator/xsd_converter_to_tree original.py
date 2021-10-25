@@ -91,7 +91,7 @@ def get_tree(xsd_path ):
         node.complex_data.Name = aux_CEO["@name"]
         if 'BEAreaLocation' == aux_CEO["@name"]:
             print("stop")
-        node = root.find_node(node.complex_data.Name)
+        node = root.find_node_in_tree(node.complex_data.Name)
         node.complex_data.Cardinality = str(aux_CEO["xsd:sequence"]["@minOccurs"]) + ".." + str(aux_CEO["xsd:sequence"]["@maxOccurs"])
         try:
             node.complex_data.Type = aux_CEO["@type"].split(":")[1]
