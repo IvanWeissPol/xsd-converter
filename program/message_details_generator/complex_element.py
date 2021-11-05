@@ -52,7 +52,7 @@ class Complex_Element_Object():
             for child in self.children:
                 child.print_tree2(level+1)
 
-    def find_node_in_tree(self,name_of_node_in_search):
+    def find_node_in_tree(self,name_of_node_in_search: str):
         
         if self.complex_data.Name == name_of_node_in_search :
             return self
@@ -60,10 +60,13 @@ class Complex_Element_Object():
             name_list = name_of_node_in_search.split("_") 
             #typo in the xsd Measurement_Series should be MeasurementSeries
             #! add an error for new typos to know to add
-            used_indexes = []
             listOfTypos = ["Measurement","Series", "Detail","Series",'Acknowledgement','MarketDocument','Volume',"Series",'Reading',"DateAndOrTime"]
+            #if the name of the current node is in the name list the desired node is a child of this node 
+            # remove the name from the node in the name lists
             if self.complex_data.Name in name_list:
                 name_list.remove(self.complex_data.Name)
+            #the same thing but taking in to consideration typos
+            #Measurement_Series is expected to be MeasurementSeries but the xsd has it separated so i took that in to consideration
             if(len(name_list)>1):
                 if((name_list[0] in listOfTypos) and (name_list[1] in listOfTypos)):
                     indices = [i for i, x in enumerate(listOfTypos) if x == name_list[0] ]
@@ -75,13 +78,11 @@ class Complex_Element_Object():
                             name_list.insert(0,aux)
             if self.complex_data.Name in name_list:
                 name_list.remove(self.complex_data.Name)
+            
+            #make the name for the child node to use
             name_of_node_in_search = "_".join(name_list)
             for child in self.children:
-#                if('MarketParticipant' == child.complex_data.Name):
-#                    print("stop")
                 parent = child.find_node_in_tree(name_of_node_in_search)
                 if parent != None:
                     return parent
-        
-        #
-        #sys.exit("node not found in tree")
+

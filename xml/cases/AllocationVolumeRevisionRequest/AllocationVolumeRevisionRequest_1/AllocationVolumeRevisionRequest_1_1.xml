@@ -1,0 +1,59 @@
+<ccma:AllocationVolumeRevisionRequest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ccma="urn:nedu:measurements:data:allocationvolumerevisionrequest:1:standard" xsi:schemaLocation="urn:nedu:measurements:data:allocationvolumerevisionrequest:1:standard AllocationVolumeRevisionRequest_1p0.xsd">
+	<ccma:EDSNBusinessDocumentHeader> 
+		<ccma:ContentHash>0</ccma:ContentHash>
+		<ccma:ConversationID> 2.0</ccma:ConversationID>
+		<ccma:CorrelationID> 3.0</ccma:CorrelationID>
+		<ccma:CreationTimestamp> 4.0</ccma:CreationTimestamp>
+		<ccma:DocumentID> 5.0</ccma:DocumentID>
+		<ccma:ExpiresAt> 6.0</ccma:ExpiresAt>
+		<ccma:MessageID> 7.0</ccma:MessageID>
+		<ccma:ProcessTypeID> 8.0</ccma:ProcessTypeID>
+		<ccma:RepeatedRequest> 9.0</ccma:RepeatedRequest>
+		<ccma:TestRequest> 10.0</ccma:TestRequest>
+		<ccma:Destination> 
+			<ccma:Receiver> 
+				<ccma:Authority> 11.0</ccma:Authority>
+				<ccma:ContactTypeIdentifier> 12.0</ccma:ContactTypeIdentifier>
+				<ccma:ReceiverID> 13.0</ccma:ReceiverID>
+			</ccma:Receiver>
+			<ccma:Service> 
+				<ccma:ServiceMethod> 14.0</ccma:ServiceMethod>
+				<ccma:ServiceName> 15.0</ccma:ServiceName>
+			</ccma:Service>
+		</ccma:Destination>
+		<ccma:Manifest> 
+			<ccma:NumberofItems> 16.0</ccma:NumberofItems>
+			<ccma:ManifestItem> 
+				<ccma:Description> 17.0</ccma:Description>
+				<ccma:LanguageCode> 18.0</ccma:LanguageCode>
+				<ccma:MimeTypeQualifierCode> 19.0</ccma:MimeTypeQualifierCode>
+				<ccma:UniformResourceIdentifier> 20.0</ccma:UniformResourceIdentifier>
+			</ccma:ManifestItem>
+		</ccma:Manifest>
+		<ccma:Source> 
+			<ccma:Authority> 21.0</ccma:Authority>
+			<ccma:ContactTypeIdentifier> 22.0</ccma:ContactTypeIdentifier>
+			<ccma:SenderID> 23.0</ccma:SenderID>
+		</ccma:Source>
+	</ccma:EDSNBusinessDocumentHeader>
+	<ccma:Measurement_Series> 
+		<ccma:mRID> 24.0</ccma:mRID>
+		<ccma:product> 25.0</ccma:product>
+		<ccma:referenceAllocation_mRID> 26.0</ccma:referenceAllocation_mRID>
+		<ccma:reasonRevisionRequest> 27.0</ccma:reasonRevisionRequest>
+		<ccma:explanationRevisionRequest> 28.0</ccma:explanationRevisionRequest>
+		<ccma:MarketEvaluationPoint> 
+			<ccma:mRID> 29.0</ccma:mRID>
+		</ccma:MarketEvaluationPoint>
+		<ccma:MarketParticipant> 
+			<ccma:mRID> 30.0</ccma:mRID>
+			<ccma:MarketRole> 
+				<ccma:type> 31.0</ccma:type>
+			</ccma:MarketRole>
+		</ccma:MarketParticipant>
+		<ccma:DateAndOrTime> 
+			<ccma:startDateTime> 32.0</ccma:startDateTime>
+			<ccma:endDateTime> 33.0</ccma:endDateTime>
+		</ccma:DateAndOrTime>
+	</ccma:Measurement_Series>
+</ccma:AllocationVolumeRevisionRequest>

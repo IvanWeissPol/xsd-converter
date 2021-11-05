@@ -8,13 +8,14 @@ from openpyxl.worksheet.dimensions import ColumnDimension
 import sys
 sys.path[0] += '\\..'
 
-baseType_tests ={"string":["correct value","Invalid value","empty value","missing element"]
-            ,"dateTime":["correct value","wrongDate","wrongOrderOfDate","empty"]
-            ,"decimal":["correct value","negative","0","fractionalNumber","bigNumber","empty","1decimal","2decimal","3decimal","12decimal"]
-            ,"integer":["correct value","negative","0","bigNumber","empty"]
-            }
+baseType_tests ={
+    "string":["correct_value" ,"Invalid_value" ,"empty_value" ,"missing_element"],
+    "dateTime":["correct_value" ,"wrongDate" ,"wrongOrderOfDate" ,"empty" ,"missing_element"],
+    "decimal":["correct_value" ,"empty" ,"1_decimal" ,"2_decimal" ,"3_decimal" ,"12_decimal" ,"missing_element"],
+    "integer":["correct_value" ,"empty" ,"missing_element"]
+                }
 #if type contains key will add the list of test cases
-Type_tests ={"Identifier":["unique ID","repeated ID"]
+Type_tests ={"Identifier":["unique_ID","repeated_ID"]
 }
 
 def add_Tests(message_details_folder_path):

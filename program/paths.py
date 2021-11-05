@@ -1,5 +1,8 @@
 message_details_folder_path = "excel\\mesage_details"
 test_cases_folder_path = "excel\\test_cases"
+done_test_cases_folder_path = "excel\\test_cases_done"
 xsd_folder_path = "xsd"
 excel_folder_path = "excel"
-    
+xmls_folder_path = "xml"
+xmls_base_folder_path = "xml\\base"
+xmls_cases_folder_path = "xml\\cases"

@@ -1,0 +1,77 @@
+<ccma:MeasurementSeriesRevisionRequest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ccma="urn:nedu:measurements:data:measurementseriesrevisionrequest:1:standard" xsi:schemaLocation="urn:nedu:measurements:data:measurementseriesrevisionrequest:1:standard MeasurementSeriesRevisionRequest_1p0.xsd">
+	<ccma:EDSNBusinessDocumentHeader> 
+		<ccma:ContentHash> </ccma:ContentHash>
+		<ccma:ConversationID>0</ccma:ConversationID>
+		<ccma:CorrelationID> </ccma:CorrelationID>
+		<ccma:CreationTimestamp> </ccma:CreationTimestamp>
+		<ccma:DocumentID> </ccma:DocumentID>
+		<ccma:ExpiresAt> </ccma:ExpiresAt>
+		<ccma:MessageID> </ccma:MessageID>
+		<ccma:ProcessTypeID> </ccma:ProcessTypeID>
+		<ccma:RepeatedRequest> </ccma:RepeatedRequest>
+		<ccma:TestRequest> </ccma:TestRequest>
+		<ccma:Destination> 
+			<ccma:Receiver> 
+				<ccma:Authority> </ccma:Authority>
+				<ccma:ContactTypeIdentifier> </ccma:ContactTypeIdentifier>
+				<ccma:ReceiverID> </ccma:ReceiverID>
+			</ccma:Receiver>
+			<ccma:Service> 
+				<ccma:ServiceMethod> </ccma:ServiceMethod>
+				<ccma:ServiceName> </ccma:ServiceName>
+			</ccma:Service>
+		</ccma:Destination>
+		<ccma:Manifest> 
+			<ccma:NumberofItems> </ccma:NumberofItems>
+			<ccma:ManifestItem> 
+				<ccma:Description> </ccma:Description>
+				<ccma:LanguageCode> </ccma:LanguageCode>
+				<ccma:MimeTypeQualifierCode> </ccma:MimeTypeQualifierCode>
+				<ccma:UniformResourceIdentifier> </ccma:UniformResourceIdentifier>
+			</ccma:ManifestItem>
+		</ccma:Manifest>
+		<ccma:Source> 
+			<ccma:Authority> </ccma:Authority>
+			<ccma:ContactTypeIdentifier> </ccma:ContactTypeIdentifier>
+			<ccma:SenderID> </ccma:SenderID>
+		</ccma:Source>
+	</ccma:EDSNBusinessDocumentHeader>
+	<ccma:Measurement_Series> 
+		<ccma:mRID> </ccma:mRID>
+		<ccma:product> </ccma:product>
+		<ccma:referenceTimeSeries_mRID> </ccma:referenceTimeSeries_mRID>
+		<ccma:reasonRevisionRequest> </ccma:reasonRevisionRequest>
+		<ccma:explanationRevisionRequest> </ccma:explanationRevisionRequest>
+		<ccma:MarketEvaluationPoint> 
+			<ccma:mRID> </ccma:mRID>
+		</ccma:MarketEvaluationPoint>
+		<ccma:MarketParticipant> 
+			<ccma:mRID> </ccma:mRID>
+			<ccma:MarketRole> 
+				<ccma:type> </ccma:type>
+			</ccma:MarketRole>
+		</ccma:MarketParticipant>
+		<ccma:DateAndOrTime> 
+			<ccma:startDateTime> </ccma:startDateTime>
+			<ccma:endDateTime> </ccma:endDateTime>
+		</ccma:DateAndOrTime>
+		<ccma:Detail_Series> 
+			<ccma:resolution> </ccma:resolution>
+			<ccma:Product> 
+				<ccma:identification> </ccma:identification>
+				<ccma:measureUnit> </ccma:measureUnit>
+			</ccma:Product>
+			<ccma:FlowDirection> 
+				<ccma:direction> </ccma:direction>
+			</ccma:FlowDirection>
+			<ccma:Original_Point> 
+				<ccma:position> </ccma:position>
+				<ccma:quantity> </ccma:quantity>
+			</ccma:Original_Point>
+			<ccma:Proposed_Point> 
+				<ccma:position> </ccma:position>
+				<ccma:quantity> </ccma:quantity>
+			</ccma:Proposed_Point>
+		</ccma:Detail_Series>
+	</ccma:Measurement_Series>
+</ccma:MeasurementSeriesRevisionRequest>

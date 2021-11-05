@@ -1,3 +1,4 @@
+import sys
 from logging import root
 from os import name
 import xmlschema
@@ -50,7 +51,7 @@ def get_tree(xsd_path ):
         if first_time :
             first_time = False
             root = node
-        root.print_tree()
+        #root.print_tree()
     return root
         
 
@@ -62,6 +63,7 @@ def find_type(simple_Element_List,node_type):
 
 #loads all values except children and parrent
 def load_node(root:Complex_Element_Object,aux_CEO,node:Complex_Element_Object,simple_Element_List):
+        #get the values from the xsd
         Name = aux_CEO["@name"] 
         base_type = ""
         restrictions = ""
@@ -78,21 +80,25 @@ def load_node(root:Complex_Element_Object,aux_CEO,node:Complex_Element_Object,si
                 base_type = base_simple_element.Type.rsplit(":")[1]
                 restrictions = base_simple_element.restriction
                 possible_allowed_value_list = base_simple_element.possible_allowed_value
+
+        # save the values in the node
         node.complex_data.Name = Name
         node.complex_data.Type = Type
         node.complex_data.Cardinality = Cardinality
         node.complex_data.Base_Type = base_type
         node.complex_data.Constraints = restrictions
         node.complex_data.Enumerations = possible_allowed_value_list
-        if Name == 'AllocationVolumeRevisionResponse_Acknowledgement_MarketDocument_Reason':
-            print("pause")
+
         if aux_CEO.get("xsd:sequence") != None:
             if aux_CEO.get("xsd:sequence").get("xsd:element")!= None:
                 node_in_tree = node
                 if root != None:
                     node_in_tree = root.find_node_in_tree(Name)
+                    #if the node does not exist in the tree 
+                    #an error happend and the code needs to be adjusted
                     if node_in_tree  == None:
                         print("stop")
+                        sys.exit("node not found in tree")
                 load_children(root,node_in_tree,aux_CEO["xsd:sequence"]["xsd:element"],simple_Element_List)
         return node
 

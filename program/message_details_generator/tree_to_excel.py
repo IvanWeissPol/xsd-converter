@@ -26,6 +26,7 @@ def traverse_tree(node:complex_element ,listOLists):
     listOLists["BaseType"].append(node.complex_data.Base_Type)       
     listOLists["Constraints"].append(node.complex_data.Constraints)
     listOLists["Enumerations"].append(node.complex_data.Enumerations)
+    listOLists["Default Values"].append("")
     #do the same for each child of the node        
     for child in node.children:
         traverse_tree(child,listOLists)
@@ -44,18 +45,20 @@ def make_excels_from_xsd(folder_Of_xsd):
             
             path = paths.message_details_folder_path + "\\mesage_details_" + name + ".xlsx"
             listOLists = {}
-            
+
+            #initialize the list of list as empthy             
             for cont in range (1,root.height+1):
                 dflevel = "L" + str(cont)    
                 listOLists[dflevel] = [] 
-#            listOLists = {"L1":[],"L2":[],"L3":[],"L4":[],"L5":[],"Cardinality":[],"Type":[],"BaseType":[],"Constraints":[],"Enumerations":[]}
             listOLists["Type"] = []
             listOLists["Cardinality"] = []
             listOLists["BaseType"] = []
             listOLists["Constraints"] = []
             listOLists["Enumerations"] = []
+            listOLists["Default Values"] = []
             #make the list of lists and turn it in to an excel sheet
             traverse_tree(root,listOLists)
+            #make the tests cases excel
             df = pd.DataFrame(data=listOLists)
             writer = pd.ExcelWriter(path=path, engine='xlsxwriter')
             df.to_excel(writer, sheet_name='Sheet1',index=False)

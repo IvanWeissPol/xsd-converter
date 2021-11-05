@@ -1,0 +1,50 @@
+<ccma:MeasurementSeriesAcknowledgement xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ccma="urn:nedu:measurements:data:measurementseriesacknowledgement:3:standard" xsi:schemaLocation="urn:nedu:measurements:data:measurementseriesacknowledgement:3:standard MeasurementSeriesAcknowledgement_3p0.xsd">
+	<ccma:EDSNBusinessDocumentHeader> 
+		<ccma:ContentHash> </ccma:ContentHash>
+		<ccma:ConversationID>3</ccma:ConversationID>
+		<ccma:CorrelationID> </ccma:CorrelationID>
+		<ccma:CreationTimestamp> </ccma:CreationTimestamp>
+		<ccma:DocumentID> </ccma:DocumentID>
+		<ccma:ExpiresAt> </ccma:ExpiresAt>
+		<ccma:MessageID> </ccma:MessageID>
+		<ccma:ProcessTypeID> </ccma:ProcessTypeID>
+		<ccma:RepeatedRequest> </ccma:RepeatedRequest>
+		<ccma:TestRequest> </ccma:TestRequest>
+		<ccma:Destination> 
+			<ccma:Receiver> 
+				<ccma:Authority> </ccma:Authority>
+				<ccma:ContactTypeIdentifier> </ccma:ContactTypeIdentifier>
+				<ccma:ReceiverID> </ccma:ReceiverID>
+			</ccma:Receiver>
+			<ccma:Service> 
+				<ccma:ServiceMethod> </ccma:ServiceMethod>
+				<ccma:ServiceName> </ccma:ServiceName>
+			</ccma:Service>
+		</ccma:Destination>
+		<ccma:Manifest> 
+			<ccma:NumberofItems> </ccma:NumberofItems>
+			<ccma:ManifestItem> 
+				<ccma:Description> </ccma:Description>
+				<ccma:LanguageCode> </ccma:LanguageCode>
+				<ccma:MimeTypeQualifierCode> </ccma:MimeTypeQualifierCode>
+				<ccma:UniformResourceIdentifier> </ccma:UniformResourceIdentifier>
+			</ccma:ManifestItem>
+		</ccma:Manifest>
+		<ccma:Source> 
+			<ccma:Authority> </ccma:Authority>
+			<ccma:ContactTypeIdentifier> </ccma:ContactTypeIdentifier>
+			<ccma:SenderID> </ccma:SenderID>
+		</ccma:Source>
+	</ccma:EDSNBusinessDocumentHeader>
+	<ccma:Acknowledgement_MarketDocument> 
+		<ccma:mRID> </ccma:mRID>
+		<ccma:createdDateTime> </ccma:createdDateTime>
+		<ccma:Received_MarketDocument> 
+			<ccma:mRID> </ccma:mRID>
+		</ccma:Received_MarketDocument>
+		<ccma:Reason> 
+			<ccma:code> </ccma:code>
+			<ccma:text> </ccma:text>
+		</ccma:Reason>
+	</ccma:Acknowledgement_MarketDocument>
+</ccma:MeasurementSeriesAcknowledgement>

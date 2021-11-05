@@ -1,0 +1,109 @@
+<ccma:VolumeSeriesNotification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ccma="urn:nedu:measurements:data:volumeseriesnotification:1:standard" xsi:schemaLocation="urn:nedu:measurements:data:volumeseriesnotification:1:standard VolumeSeriesNotification_1p0.xsd">
+	<ccma:EDSNBusinessDocumentHeader> 
+		<ccma:ContentHash> </ccma:ContentHash>
+		<ccma:ConversationID> </ccma:ConversationID>
+		<ccma:CorrelationID> </ccma:CorrelationID>
+		<ccma:CreationTimestamp> </ccma:CreationTimestamp>
+		<ccma:DocumentID> </ccma:DocumentID>
+		<ccma:ExpiresAt> </ccma:ExpiresAt>
+		<ccma:MessageID> </ccma:MessageID>
+		<ccma:ProcessTypeID> </ccma:ProcessTypeID>
+		<ccma:RepeatedRequest> </ccma:RepeatedRequest>
+		<ccma:TestRequest> </ccma:TestRequest>
+		<ccma:Destination> 
+			<ccma:Receiver> 
+				<ccma:Authority> </ccma:Authority>
+				<ccma:ContactTypeIdentifier> </ccma:ContactTypeIdentifier>
+				<ccma:ReceiverID> </ccma:ReceiverID>
+			</ccma:Receiver>
+			<ccma:Service> 
+				<ccma:ServiceMethod> </ccma:ServiceMethod>
+				<ccma:ServiceName> </ccma:ServiceName>
+			</ccma:Service>
+		</ccma:Destination>
+		<ccma:Manifest> 
+			<ccma:NumberofItems> </ccma:NumberofItems>
+			<ccma:ManifestItem> 
+				<ccma:Description> </ccma:Description>
+				<ccma:LanguageCode> </ccma:LanguageCode>
+				<ccma:MimeTypeQualifierCode> </ccma:MimeTypeQualifierCode>
+				<ccma:UniformResourceIdentifier> </ccma:UniformResourceIdentifier>
+			</ccma:ManifestItem>
+		</ccma:Manifest>
+		<ccma:Source> 
+			<ccma:Authority> </ccma:Authority>
+			<ccma:ContactTypeIdentifier> </ccma:ContactTypeIdentifier>
+			<ccma:SenderID> </ccma:SenderID>
+		</ccma:Source>
+	</ccma:EDSNBusinessDocumentHeader>
+	<ccma:Volume_Series> 
+		<ccma:mRID> </ccma:mRID>
+		<ccma:product> </ccma:product>
+		<ccma:referenceRevisionRequest_mRID> </ccma:referenceRevisionRequest_mRID>
+		<ccma:MarketEvaluationPoint> 
+			<ccma:mRID> </ccma:mRID>
+		</ccma:MarketEvaluationPoint>
+		<ccma:MarketParticipant> 
+			<ccma:mRID> </ccma:mRID>
+		</ccma:MarketParticipant>
+		<ccma:Domain> 
+			<ccma:mRID> </ccma:mRID>
+		</ccma:Domain>
+		<ccma:DateAndOrTime> 
+			<ccma:startDateTime> </ccma:startDateTime>
+			<ccma:endDateTime> </ccma:endDateTime>
+		</ccma:DateAndOrTime>
+		<ccma:Volume_Quantity> 
+			<ccma:quantity> </ccma:quantity>
+			<ccma:timeframeType> </ccma:timeframeType>
+			<ccma:Product> 
+			</ccma:Product>
+			<ccma:FlowDirection> 
+			</ccma:FlowDirection>
+		</ccma:Volume_Quantity>
+		<ccma:RestVolume_Quantity> 
+			<ccma:quantity> </ccma:quantity>
+			<ccma:Product> 
+			</ccma:Product>
+			<ccma:FlowDirection> 
+			</ccma:FlowDirection>
+		</ccma:RestVolume_Quantity>
+		<ccma:Max_Quantity> 
+			<ccma:quantity> </ccma:quantity>
+			<ccma:Product> 
+			</ccma:Product>
+			<ccma:FlowDirection> 
+			</ccma:FlowDirection>
+		</ccma:Max_Quantity>
+		<ccma:WeekMax_Quantity> 
+			<ccma:quantity> </ccma:quantity>
+			<ccma:Product> 
+			</ccma:Product>
+			<ccma:FlowDirection> 
+			</ccma:FlowDirection>
+			<ccma:DateAndOrTime> 
+			</ccma:DateAndOrTime>
+		</ccma:WeekMax_Quantity>
+		<ccma:Register> 
+			<ccma:mRID> </ccma:mRID>
+			<ccma:timeframeType> </ccma:timeframeType>
+			<ccma:Product> 
+				<ccma:identification> </ccma:identification>
+				<ccma:measureUnit> </ccma:measureUnit>
+			</ccma:Product>
+			<ccma:FlowDirection> 
+				<ccma:direction> </ccma:direction>
+			</ccma:FlowDirection>
+			<ccma:Meter> 
+				<ccma:mRID> </ccma:mRID>
+			</ccma:Meter>
+			<ccma:Reading> 
+				<ccma:value>1.1</ccma:value>
+				<ccma:origin> </ccma:origin>
+				<ccma:Reading_DateAndOrTime> 
+					<ccma:date> </ccma:date>
+				</ccma:Reading_DateAndOrTime>
+			</ccma:Reading>
+		</ccma:Register>
+	</ccma:Volume_Series>
+</ccma:VolumeSeriesNotification>
